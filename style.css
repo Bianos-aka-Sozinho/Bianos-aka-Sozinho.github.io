@@ -1,0 +1,129 @@
+@font-face {
+    font-family: main-font;
+    src: url(HammersmithOne-Regular.ttf);
+}
+
+* {
+    background: #222831;
+    --bs-body-bg: #222831;
+    font-family: main-font;
+    --bs-body-font-family: main-font;
+    color: #EEEEEE;
+    --bs-body-color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.navbar {
+    margin-top: 70px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    user-select: none;
+    -webkit-user-drag: none;
+    top: 0;
+}
+
+
+.navbar > #mIMG {
+    position: fixed;
+    left: 0;
+    user-select: none;
+    -webkit-user-drag: none;
+    max-width: 280px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.navbar > #nav1 {
+    position: fixed;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    transition: color .6s linear;
+    text-align: center;
+}
+
+.navbar > #nav1 {
+    left: 45%;
+}
+
+.mainPage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    top: 150px;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.mainPage > label > a {
+    font-size: 28px !important;
+    cursor: pointer;
+    border-bottom: 3px solid #76ABAE !important;
+    color: #76ABAE !important;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .navbar {
+        user-select: none;
+        -webkit-user-drag: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    
+    .navbar > #mIMG {
+        max-width: 100px; 
+    }
+    
+    .navbar > #nav1 {
+        font-size: 25px;
+        margin: 10px 0;
+    }
+    
+    .mainPage {
+        user-select: none;
+        -webkit-user-drag: none;
+        top: 80px;
+        font-size: 35px;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .navbar > #mIMG {
+        position: fixed;
+        left: 0;
+        user-select: none;
+        -webkit-user-drag: none;
+        max-width: 120px;
+        padding: 0px;
+        top: 0px;
+        margin-left: 10px;
+    }   
+
+    .navbar > #nav1 {
+        font-size: 35px; 
+    }
+    
+    .mainPage {
+        margin-top: 25px;
+        user-select: none;
+        -webkit-user-drag: none;
+        font-size: 20px; 
+        margin-left: 10px;
+    }
+}
